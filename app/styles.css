@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #88ab33;
+  --color-secondary: #c2b39a;
+  --color-bg-dark: #0d0d0d;
+  --color-gray-800: #1f2937;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: white;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(1, 1, 1, 1);
+  border: 0;
+  white-space: nowrap;
+}
