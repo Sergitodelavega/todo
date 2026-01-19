@@ -1,3 +1,8 @@
+interface Todo 
+  { id: number; text: string; is_completed: boolean; 
+
+  }
+
 "use client";
 
 import React from 'react';
@@ -8,7 +13,7 @@ import TodoList from '@/src/components/TodoList';
 import TodoHero from '@/src/components/TodoHero';
 
 export default function Home() {
-const [todos, setTodos] = useState([]);
+const [todos, setTodos] = useState<Todo[]>([]);
 
 //Retrieve data from localStorage when component mounts
 useEffect(() => {
