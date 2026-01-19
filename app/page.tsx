@@ -1,9 +1,9 @@
+"use client";
+
 interface Todo 
   { id: number; text: string; is_completed: boolean; 
 
   }
-
-"use client";
 
 import React from 'react';
 import { useState, useEffect } from 'react';
