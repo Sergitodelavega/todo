@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Todo App
+
+A modern, responsive Todo application built with Next.js, React, and Tailwind CSS. This application allows you to manage your daily tasks with features like adding, editing, deleting, and marking todos as complete.
+
+## Features
+
+- ✅ Add new todos
+- ✅ Mark todos as complete/incomplete
+- ✅ Edit todo titles inline
+- ✅ Delete todos
+- ✅ Progress tracking (completed vs total)
+- ✅ Data persistence using localStorage
+- ✅ Responsive design for mobile and desktop
+- ✅ Clean, intuitive UI with Tailwind CSS
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org) 14+ (App Router)
+- **Language:** TypeScript / JavaScript (JSX)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
+- **Icons:** SVG icons (custom)
+- **State Management:** React useState, useEffect
+
+## Project Structure
+
+```
+todo/
+├── app/
+│   ├── page.tsx          # Main page with todo state management
+│   ├── layout.tsx        # Root layout
+│   └── styles.css        # Global styles
+├── src/
+│   └── components/
+│       ├── Header.jsx    # App header with logo
+│       ├── Form.jsx      # Todo input form
+│       ├── TodoList.jsx  # Todo list with items
+│       └── TodoHero.jsx  # Progress stats display
+├── public/               # Static assets
+├── package.json
+└── README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.x or higher
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd todo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Usage
+
+### Adding a Todo
+- Type your task in the input field
+- Press Enter or click the add button to create a new todo
+
+### Completing a Todo
+- Click the circle icon next to a todo to mark it as complete/incomplete
+- Completed todos show a green checkmark and strikethrough text
+
+### Editing a Todo
+- Click the edit icon (pencil) to enter inline edit mode
+- Modify the text and press Enter or click outside to save
+- Changes are automatically saved to localStorage
+
+### Deleting a Todo
+- Click the delete icon (trash) to remove a todo
+- The todo will be permanently deleted
+
+### Data Persistence
+- All todos are saved to your browser's localStorage
+- Your tasks will remain after refreshing the page
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs) - Next.js features and API
+- [Tailwind CSS](https://tailwindcss.com/docs) - Tailwind CSS documentation
+- [React Documentation](https://react.dev) - React documentation
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy this Next.js app is using the [Vercel Platform](https://vercel.com/new).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
