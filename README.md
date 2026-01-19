@@ -1,4 +1,4 @@
-# Todo App
+# A Todo App from Scratch with React.js
 
 A modern, responsive Todo application built with Next.js, React, and Tailwind CSS. This application allows you to manage your daily tasks with features like adding, editing, deleting, and marking todos as complete.
 
